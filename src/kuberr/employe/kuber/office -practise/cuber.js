@@ -19,10 +19,6 @@ export default function CuberUpdate() {
                 Date: "",
                 Education: "",
                 upload_Image: "",
-
-
-
-
             }}
             validationSchema={
                 yup.object({
@@ -40,12 +36,6 @@ export default function CuberUpdate() {
                     Date: yup.string().required("Date is required"),
                     Education: yup.string().required("Education is required"),
                     upload_Image: yup.string().required("upload_Image is required")
-
-
-
-
-
-
                 })
             }
 
@@ -63,14 +53,10 @@ export default function CuberUpdate() {
             }
 
         >
-
             {
                 < Form >
 
-
-
                     <div className="p-4 mt-3">
-
 
                         <div className="row">
                             <div className="form-floating mt-2 col">
@@ -125,7 +111,7 @@ export default function CuberUpdate() {
 
                             </div>
                             <div className="col mt-2">
-                                <Field className="form-select" as="select" aria-label="Defult select example" name="Select_Department">
+                                <Field className="form-select "  style={{height:"51px"}} as="select" aria-label="Defult select example" name="Select_Department">
                                     <option value="-1">Select Department</option>
                                     <option value="Developement">Developement</option>
                                     <option value="Female">Develop</option>
